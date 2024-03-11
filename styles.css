@@ -1,0 +1,47 @@
+#main-title {
+    background-color: blueviolet;
+    font-family: monospace;
+}
+
+.headers {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+#first-table {
+    background-color: pink;
+    color: black;
+}
+
+.table-title {
+    font-size: 20px;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.table-information {
+    font-size: 18px;
+    font-family: cursive;
+    color: mediumblue
+}
+
+.body-information {
+    font-size: 18x;
+    font-family: fantasy;
+    color: red
+}
+
+#link-github {
+    background-color: yellow;
+    color: black;
+    font-family: fantasy;
+    font-size: 18px;
+}
+
+#p1 {
+    font-size: 18px;
+    color: magenta;
+    font-family: fantasy;
+}

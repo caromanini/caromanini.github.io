@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me Chiara Romanini</title>
+    <link rel="stylesheet" href="styles.css"></link>
+</head>
+<body>
+    <h1 id="main-title">Chiara Romanini's Personal Page</h1>
+    <h2 class="headers">Major</h2>
+        <p class="body-information">Computer Science</p>
+    <h3 class="headers">Year of University Enrollment</h3>
+        <p class="body-information">2021</p>
+    <h4 class="headers">Link to Github</h4>
+        <a href="https://github.com/caromanini" id="link-github">Github Profile link</a>
+    <h5 class="headers">Personal Summary</h5>
+        <p class="body-information">I was born in Punta Arenas, Chile, on november 5th 2001. 
+            Currently, I am a Computer Science Engineering student at 
+            Universidad de los Andes.
+        </p>
+    <h6 class="headers">Skills</h6>
+        <table id="first-table">
+            <tr>
+                <th class="table-title">Skill</td>
+                <th class="table-title">Level</td>
+            </tr>
+            <tr>
+                <td class="table-information">Python</td>
+                <td class="table-information">Advanced</td>
+            </tr>
+            <tr>
+                <td class="table-information">C/C++</td>
+                <td class="table-information">Intermediate</td>
+            </tr>
+            <tr>
+                <td class="table-information">Javascript</td>
+                <td class="table-information">Basic</td>
+            </tr>
+            <tr>
+                <td class="table-information">Spanish</td>
+                <td class="table-information">Native</td>
+            </tr>
+            <tr>
+                <td class="table-information">English</td>
+                <td class="table-information">Advanced</td>
+            </tr>
+        </table>
+
+    <p class="headers">Surprise Button</p>
+        <p id="p1">This is going to change</p>
+
+        <input id="este-es-el-cambio" type="text">
+        <button type="button" onclick= change()>Submit</button>
+        <script>
+            function change() {
+                document.getElementById("p1").innerHTML = 
+                document.getElementById("este-es-el-cambio").value;
+            }
+        </script> 
+</body>
+</html>
