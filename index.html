@@ -1,62 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me Chiara Romanini</title>
+    <title>Chiara Romanini</title>
     <link rel="stylesheet" href="styles.css"></link>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body>
-    <h1 id="main-title">Chiara Romanini's Personal Page</h1>
-    <h2 class="headers">Major</h2>
-        <p class="body-information">Computer Science</p>
-    <h3 class="headers">Year of University Enrollment</h3>
-        <p class="body-information">2021</p>
-    <h4 class="headers">Link to Github</h4>
-        <a href="https://github.com/caromanini" id="link-github">Github Profile link</a>
-    <h5 class="headers">Personal Summary</h5>
-        <p class="body-information">I was born in Punta Arenas, Chile, on november 5th 2001. 
-            Currently, I am a Computer Science Engineering student at 
-            Universidad de los Andes.
-        </p>
-    <h6 class="headers">Skills</h6>
-        <table id="first-table">
-            <tr>
-                <th class="table-title">Skill</td>
-                <th class="table-title">Level</td>
-            </tr>
-            <tr>
-                <td class="table-information">Python</td>
-                <td class="table-information">Advanced</td>
-            </tr>
-            <tr>
-                <td class="table-information">C/C++</td>
-                <td class="table-information">Intermediate</td>
-            </tr>
-            <tr>
-                <td class="table-information">Javascript</td>
-                <td class="table-information">Basic</td>
-            </tr>
-            <tr>
-                <td class="table-information">Spanish</td>
-                <td class="table-information">Native</td>
-            </tr>
-            <tr>
-                <td class="table-information">English</td>
-                <td class="table-information">Advanced</td>
-            </tr>
-        </table>
+<body id="body">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <p class="headers">Surprise Button</p>
-        <p id="p1">This is going to change</p>
+    <h1 id="main-title">Chiara Andrea Romanini Jofré</h1>
 
-        <input id="este-es-el-cambio" type="text">
-        <button type="button" onclick= change()>Submit</button>
-        <script>
-            function change() {
-                document.getElementById("p1").innerHTML = 
-                document.getElementById("este-es-el-cambio").value;
-            }
-        </script> 
+    <div class="container text-center">
+        <div class="row align-items-start">
+            <div class="col">
+                <div id="major" class="container-fluid">
+                    <h3>Major</h3>
+                    <p>Computer Science Engineering</p>
+                </div>
+            </div>
+            <div class="col">
+                <div id="year-enrollment" class="container-fluid">
+                    <h3>Year of Enrollment</h3>
+                    <p>2021</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="accordion" id="personal-summary">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target='#collapseOne' aria-expanded="true" aria-controls="collapseOne">
+                                <h6 id="header">Personal Summary</h6>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="accordionExample">
+                            <div class="accordion-body">
+                                <strong>I was born in Punta Arenas, Chile, on november 5th 2001. 
+                                    Currently, I am a Computer Science Engineering student at 
+                                    Universidad de los Andes.
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <h2>Skills</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Skill</th>
+                            <th scope="col">Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Python</td>
+                            <td>Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td>C/C++</td>
+                            <td>Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td>Javascript</td>
+                            <td>Basic</td>
+                        </tr>
+                        <tr>
+                            <td>Spanish</td>
+                            <td>Native</td>
+                        </tr>
+                        <tr>
+                            <td>English</td>
+                            <td>Advanced</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="surprise-button-container" class="container text-center">
+        <div class="row">
+            <div class="col">
+                <h2>Surprise Button</h2>
+                <p id="p1">This is going to change</p>
+                <input id="este-es-el-cambio" type="text">
+                <button type="button" class="btn btn-primary" onclick=change()>Surprise</button>
+                <script>
+                    function change() {
+                        document.getElementById("p1").innerHTML = 
+                        document.getElementById("este-es-el-cambio").value
+                    }
+                </script>
+            </div>
+            <div class="col">
+                <div class="alert alert-primary" role="alert">
+                    This is an alert! Hello!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <a href="https://github.com/caromanini" id="link-github">
+            Github Profile link
+        </a>
+    </div>
 </body>
 </html>

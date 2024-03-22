@@ -1,47 +1,40 @@
 #main-title {
-    background-color: blueviolet;
-    font-family: monospace;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-.headers {
-    font-size: 25px;
-    font-weight: bold;
-    font-family: monospace;
-}
-
-#first-table {
-    background-color: pink;
-    color: black;
-}
-
-.table-title {
+#major {
+    background-color: lightblue;
+    padding: 5px;
+    border-radius: 5px;
     font-size: 20px;
-    text-decoration: underline;
-    font-weight: bold;
-    font-family: monospace;
 }
 
-.table-information {
-    font-size: 18px;
-    font-family: cursive;
-    color: mediumblue
+#year-enrollment {
+    background-color: lightblue;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
 }
 
-.body-information {
-    font-size: 18x;
-    font-family: fantasy;
-    color: red
+#personal-summary {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#surprise-button-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #link-github {
-    background-color: yellow;
-    color: black;
-    font-family: fantasy;
-    font-size: 18px;
+    position: fixed;
+    bottom: 20px;
+    right: 30px
 }
 
-#p1 {
-    font-size: 18px;
-    color: magenta;
-    font-family: fantasy;
+#body {
+    font-family: monospace;
 }
